@@ -101,9 +101,6 @@ header{
     display: flex;
     gap: 18rem;
 }
-.nav-bar ul li .active{
-    color: var(--primary-color);
-}
 .nav-bar ul li a{
     font-size: 6rem;
     font-weight: 600;
@@ -112,7 +109,10 @@ header{
     color: var(--dark-text);
 }
 .nav-bar ul li:hover a{
-    color:var(--primary-color)
+    color:var(--primary-color);
+}
+.nav-bar ul li .active{
+    color: var(--primary-color);
 }
 .buttons{
     display: flex;
@@ -141,7 +141,7 @@ header .buttons i{
         display: block;
     }
 }
-/* =======HERO SECTION====== */
+/* HERO SECTION */
 .hero{
     width: 100%;
     display: flex;
@@ -182,123 +182,4 @@ header .buttons i{
     margin: 0 auto;
     border-radius: 1.5rem;
     font-weight: 500;
-}
-.hero-images{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    align-items: end;
-    width: 90%;
-    gap: 5rem;
-    padding: 0 5rem;
-}
-.hero-images .grid-item img{
-    width: 100%;
-    border-radius: 4rem;
-}
-.hero-images .grid-item{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-.hero-images .grid-item button{
-    background-color: var(--secondary-color);
-    padding: 6rem 0;
-    color: var(--white);
-    font-weight: 300;
-    text-align: center;
-    text-justify: center;
-    border-radius: 2rem;
-}
-
-/* =========about section======= */
-.about{
-    margin-top: 5%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-}
-.about p:not(.description){
-    width: 40%;
-    font-size: 7rem;
-    margin: 1rem auto;
-}
-.about-images{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 8rem;
-    max-width: 90%;
-    margin: 0 auto;   
-   
-}
-.about-images .grid-item{
-    border: 1px solid var(--dark-text);
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 10rem;
-    gap: 2rem;
-    border-radius: 10px;
-}
-.about-images .grid-item img{
-    width: 100%;
-    border-radius: 10px;
-}
-.about button{
-    width:  fit-content;
-    margin: 6rem auto 0;
-    padding: 4rem 20rem;
-    border-radius: 2rem;
-}
-
-/* =========services section======= */
-.services{
-    background-color: #032725;
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20rem;
-    margin-top: 30rem;
-    padding-bottom: 30rem;
-}
-.services h3{
-    text-align: center;
-    margin-top: 3%;
-}
-.services .gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    margin: 0 auto;
-    gap: 15rem;
-}
-.gallery-item{
-    border: 1px solid var(--gray);
-    border-radius: 5rem;
-    padding: 10rem;
-}
-.gallery-item h6{
-    margin-bottom: 3rem;
-}
-.gallery-item p{
-    color: var(--gray);
-    margin-bottom: 10rem;
-}
-.gallery-item img{
-    width: 100%;
-    margin: 0 auto;
-}
-.services button{
-    width: fit-content;
-    margin: 0 auto;
-    padding: 4rem 20rem;
-    border-radius: 2rem;
-    color: var(--gray);
-}
-
-/* =======FOOTER=========== */
-footer{
-    width: 100%;
-    background-color: var(--gray);
-    height: 20vh;
 }

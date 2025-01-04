@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Paasword</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Email Stage -->
+         <div id="stage-email" class="stage active">
+            <div class="top-icons">
+                <a href="/src/loginpage/login.html"><i class="back fas fa-arrow-left"></i></a>
+                <a href="/src/loginpage/login.html"><i class="close fas fa-times"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/assets/images/Colored Logo.png" alt="">
+            </div>
+            <div class="text">
+                <h4 id="heading">Forgot Password</h4>
+                <p class="subtext" id="subtext">Enter your Email below</p>
+            </div>
+            <form action="#" method="get" >
+                <input type="email" name="" id="email" placeholder="Email Address">
+                <p id="email-error" class="error-message"></p>
+                <input type="submit" value="Send Code" id="create">
+            </form>
+         </div>
+        
+        <!-- Verify Code Stage -->
+         <div id="stage-code" class="stage">
+            <div class="top-icons">
+                <i class="fas fa-arrow-left" id="codeback"></i>
+                <a href="/src/loginpage/login.html"><i class="close fas fa-times"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/assets/images/Colored Logo.png" alt="">
+            </div>
+            <div class="text">
+                <h4 id="heading">Verify Code</h4>
+                <p class="subtext" id="subtext">An authentication has been sent to your email</p>
+            </div>
+            <form action="#" method="get" >
+                <input type="tel" name="" id="otp-code" placeholder="Enter Code Here" required>
+                <p id="result">OTP will expire in 4:59</p>
+                <p id="otp">Didn't receive a code? <a href="#" id="resend">Resend OTP</a></p>
+                <p id="code-error" class="error-message"></p>
+                <input type="submit" value="Verify" id="code-next">
+            </form>
+         </div>
+
+         <!-- Change Password Stage -->
+          <div id="stage-password" class="stage">
+            <div class="top-icons">
+                <i class="fas fa-arrow-left" id="passwordback"></i>
+                <a href="#stage-email"><i class="close fas fa-times"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/assets/images/Colored Logo.png" alt="">
+            </div>
+            <div class="text">
+                <h4 id="heading">Set Password</h4>
+                <p class="subtext" id="subtext">Your previous password has been erased. Kindly set a new password for your account</p>
+            </div>
+            <form action="#" method="get" >
+                <input type="password" name="" id="password" placeholder=" Password" required>
+                <input type="password" name="" id="passwordSecond" placeholder="Confirm Password" required>
+                <p id="password-error" class="error-message"></p>
+                <p id="password-result"></p>
+                <input type="submit" value="submit" id="password-submit">
+            </form>
+          </div>
+    </div>
+    <script src="./reset.js"></script>
+</body>
+</html>

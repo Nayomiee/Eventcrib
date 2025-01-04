@@ -40,14 +40,6 @@ body{
     border: 1px solid var(--grey-text);
     max-height: 90%;
 }
-@media (max-width:1024px){
-    .container{
-        width: 100%;
-        height: fit-content;
-        margin-top: 5rem;
-        max-height: 100%;
-    }
-}
 .top-icons{
     display: flex;
     justify-content: space-between;
@@ -93,20 +85,23 @@ ul{
 li{
     margin:0 1rem 0.5rem 0;
 }
-label{
+.label{
     font-size: 0.8rem;
     display: flex;
     font-size: 0.7rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
 }
-label p a{
-    text-decoration: underline;
+label{
+    display: flex;
 }
 input[type=checkbox]{
     width: 18px;
 }
 input[type=submit]{
     border: none;
-    background-color: rgb(158, 157, 157);
+    background-color: var(--primary-color);
     color: white;
     margin-bottom: 1rem!important;
 }
@@ -126,7 +121,7 @@ input[type=submit]{
     font-size: 1.8rem;
 }
 .icons i:nth-child(1){
-    background:linear-gradient(90deg,blue,red);
+    background:linear-gradient(180deg,red,yellow,green,blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -141,6 +136,9 @@ span{
 }
 span a{
     color: var(--primary-color);
+}
+input{
+    outline: none;
 }
 input:not(input[type=submit]):focus{
     border: 1px solid var(--primary-color);

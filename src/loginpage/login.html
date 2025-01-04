@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventCrib</title>
-    <link rel="stylesheet" href="./join.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
 <body>
@@ -17,32 +17,22 @@
         <div class="logo">
             <img src="/assets/images/Colored Logo.png" alt="">
         </div>
-        <h4>Create Account</h4>
+        <h4>Login to Continue</h4>
         <form>
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
             <input type="email" placeholder="Email Address" required>
             <input type="password" name="" id="" placeholder="Password" required>
 
-            <p class="sub-title">Password must contain at least</p>
 
-            <!-- <p>
-                <ul>
-                    <li>8 Characters</li>
-                    <li>1 Uppercase letter</li>
-                    <li>1 Lowercase letter</li>
-                    <li>1 Number</li>
-                    <li>1 Special Character</li>
-                </ul>
-                
-            </p> -->
-
-            <label for="">
-                <input type="checkbox" name="" id="">
-                <p>By creating an account, I agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
-            </label>
+            <div class="label">
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <p>Remember Me</p>
+                </label>
+                <a href="/src/forgot/reset.html">Forgot Password?</a>
+            </div>
             
-            <input type="submit" value="Create Account">
+            
+            <input type="submit" value="Log In">
         </form>
         <p class="log">or Log in with</p>
         <div class="icons">
@@ -51,7 +41,7 @@
             <i class="fab fa-apple"></i>
         </div>
         <span>
-            Already have an account? <a href="/src/loginpage/login.html">Log in <i class="fa fa-arrow-right"></i></a>
+            Don't have an account <a href="/src/joinpage/join.html">Sign Up <i class="fa fa-arrow-right"></i></a>
         </span>
     </div>
 </body>
