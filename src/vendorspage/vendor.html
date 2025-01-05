@@ -8,135 +8,258 @@
     <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
 <body>
-    <div class="header-container">
-        <header class="header">
-            <div class="logo">
-                <img src="/assets/images/Colored Logo.png" alt="">
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li class="nav-list"><a href="/src/landingpage/index.html">Home</a></li>
-                    <li class="nav-list"><a href="" >See Events</a></li>
-                    <li class="nav-list"><a href="/src/vendorspage/vendor.html" class="active">Vendors</a></li>
-                    <li class="nav-list"><a href="">Create Event</a></li> 
-                </ul>
-            </nav>
-            
-            <div class="buttons">
-                <i class="fa-solid fa-bars"></i>
-                <button class="header-buttons main-btn"><a href="/src/joinpage/join.html">Join Us</a></button>
-                <button class="header-buttons sec-btn"><a href="/src/loginpage/login.html">Log In</a></button>
-            </div>
-        </header>
-    </div>
-    
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Find and Hire all your Event Service Providers here!</h1>
-            <p>Vendors can showcase their services and connect with event creators and also grow their businesses and secure more bookings. Hire vendors like DJs, Catering Services, photographers, MCs and more, or be one too</p>
-            <button class="main-btn">Create Vendor Profile</button>
+    <div id="find-vendor" class="section active">
+        <div class="header-container">
+            <header class="header">
+                <div class="logo">
+                    <img src="/assets/images/Colored Logo.png" alt="">
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li class="nav-list"><a href="/src/landingpage/index.html">Home</a></li>
+                        <li class="nav-list"><a href="" >See Events</a></li>
+                        <li class="nav-list"><a href="/src/vendorspage/vendor.html" class="active">Vendors</a></li>
+                        <li class="nav-list"><a href="">Create Event</a></li> 
+                    </ul>
+                </nav>
+                
+                <div class="buttons">
+                    <i class="fa-solid fa-bars"></i>
+                    <button class="header-buttons main-btn"><a href="/src/joinpage/join.html">Join Us</a></button>
+                    <button class="header-buttons sec-btn"><a href="/src/loginpage/login.html">Log In</a></button>
+                </div>
+            </header>
         </div>
-        <div class="hero-div">
-            <div class="audience">
-                <img src="/assets/images/global-refresh.png" alt="">
-                <h6>Wide Audience Reach</h6> 
-                <p>Connect with a global network of potential customers through targeted exposure and optimized listings.</p>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Find and Hire all your Event Service Providers here!</h1>
+                <p>Vendors can showcase their services and connect with event creators and also grow their businesses and secure more bookings. Hire vendors like DJs, Catering Services, photographers, MCs and more, or be one too</p>
+                <button class="main-btn" onclick="goToSection('vendor-create')">Create Vendor Profile</button>
             </div>
-            <div class="transactions">
-                <img src="/assets/images/transaction-minus.png" alt="">
-                <h6>Seamless Transactions</h6>
-                <p>Offer secure and flexible payment options, including crypto, to simplify purchases and build trust.</p>
+            <div class="hero-div">
+                <div class="audience">
+                    <img src="/assets/images/global-refresh.png" alt="">
+                    <h6>Wide Audience Reach</h6> 
+                    <p>Connect with a global network of potential customers through targeted exposure and optimized listings.</p>
+                </div>
+                <div class="transactions">
+                    <img src="/assets/images/transaction-minus.png" alt="">
+                    <h6>Seamless Transactions</h6>
+                    <p>Offer secure and flexible payment options, including crypto, to simplify purchases and build trust.</p>
+                </div>
+                <div class="customize">
+                    <img src="/assets/images/profile-add.png" alt="">
+                    <h6>Customizable Vendor Profiles</h6>
+                    <p>Showcase your unique offerings with tailored profiles, reviews, and portfolios to stand out.</p>
+                </div>
+                <div class="collaborate">
+                    <img src="/assets/images/convertshape-2.png" alt="">
+                    <h6>Collaboration Opportunities</h6>
+                    <p>Network with other vendors and event organizers to create partnerships and expand your reach</p>
+                </div>
+                <div class="data">
+                    <img src="/assets/images/data.png" alt="">
+                    <h6>Data-driven Insights</h6>
+                    <p>Access analytics on customer behavior, sales trends, and engagement to refine your marketing strategy.</p>
+                </div>
             </div>
-            <div class="customize">
-                <img src="/assets/images/profile-add.png" alt="">
-                <h6>Customizable Vendor Profiles</h6>
-                <p>Showcase your unique offerings with tailored profiles, reviews, and portfolios to stand out.</p>
+        </section>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search Vendors">
+            <i class="fas fa-search"></i>
+        </div>   
+        <div class="vendors">
+            <h3>Top Vendors</h3>
+            <div class="vendors-gallery">
+                <div class="cards">
+                    <img src="/assets/images/image 14.png" alt="">
+                    <div class="texts">
+                        <h4>Hannis Kitchen</h4>
+                        <div class="icons">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="description">Catering Service</p>
+                    <button class="main-btn" onclick="goToSection('vendor-profile')">Visit Page</button>
+                </div>
+                <div class="cards">
+                    <img src="/assets/images/image 14.png" alt="">
+                    <div class="texts">
+                        <h4>Hannis Kitchen</h4>
+                        <div class="icons">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="description">Catering Service</p>
+                    <button class="main-btn">Visit Page</button>
+                </div>
+                <div class="cards">
+                    <img src="/assets/images/image 14.png" alt="">
+                    <div class="texts">
+                        <h4>Hannis Kitchen</h4>
+                        <div class="icons">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="description">Catering Service</p>
+                    <button class="main-btn">Visit Page</button>
+                </div>
+                <div class="cards">
+                    <img src="/assets/images/image 14.png" alt="">
+                    <div class="texts">
+                        <h4>Hannis Kitchen</h4>
+                        <div class="icons">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="description">Catering Service</p>
+                    <button class="main-btn">Visit Page</button>
+                </div> 
             </div>
-            <div class="collaborate">
-                <img src="/assets/images/convertshape-2.png" alt="">
-                <h6>Collaboration Opportunities</h6>
-                <p>Network with other vendors and event organizers to create partnerships and expand your reach</p>
-            </div>
-            <div class="data">
-                <img src="/assets/images/data.png" alt="">
-                <h6>Data-driven Insights</h6>
-                <p>Access analytics on customer behavior, sales trends, and engagement to refine your marketing strategy.</p>
-            </div>
+            <button class="more main-btn">See more Vendors</button>
         </div>
-    </section>
-
-    <div class="search">
-        <input type="search" name="" id="" placeholder="Search Vendors">
-        <i class="fas fa-search"></i>
     </div>
 
-    <div class="vendors">
-        <h3>Top Vendors</h3>
-        <div class="vendors-gallery">
-            <div class="cards">
-                <img src="/assets/images/image 14.png" alt="">
-                <div class="texts">
-                    <h4>Hannis Kitchen</h4>
-                    <div class="icons">
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+    <div id="vendor-create" class="section">
+        <div class="header-container">
+            <header class="header">
+                <div class="logo">
+                    <img src="/assets/images/Colored Logo.png" alt="">
                 </div>
-                <p class="description">Catering Service</p>
-                <button class="main-btn">Visit Page</button>
-            </div>
-            <div class="cards">
-                <img src="/assets/images/image 14.png" alt="">
-                <div class="texts">
-                    <h4>Hannis Kitchen</h4>
-                    <div class="icons">
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-                <p class="description">Catering Service</p>
-                <button class="main-btn">Visit Page</button>
-            </div>
-            <div class="cards">
-                <img src="/assets/images/image 14.png" alt="">
-                <div class="texts">
-                    <h4>Hannis Kitchen</h4>
-                    <div class="icons">
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-                <p class="description">Catering Service</p>
-                <button class="main-btn">Visit Page</button>
-            </div>
-            <div class="cards">
-                <img src="/assets/images/image 14.png" alt="">
-                <div class="texts">
-                    <h4>Hannis Kitchen</h4>
-                    <div class="icons">
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="fas fa-star active"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-                <p class="description">Catering Service</p>
-                <button class="main-btn">Visit Page</button>
-            </div> 
+                <nav class="nav-bar">
+                    <ul>
+                        <li class="nav-list"><a href="/src/landingpage/index.html">Home</a></li>
+                        <li class="nav-list"><a href="" >See Events</a></li>
+                        <li class="nav-list"><a href="/src/vendorspage/vendor.html" class="active">Vendors</a></li>
+                        <li class="nav-list"><a href="">Create Event</a></li> 
+                    </ul>
+                </nav>
+                
+                <span class="account"><p>J</p></span>
+            </header>
         </div>
-        <button class="more main-btn">See more Vendors</button>
+        <div class="upload-image">
+            <h2>Upload Image</h2>
+            <!-- <input type="file" id="imageUpload" accept="image/*"> -->
+            <div id="imagePreviewContainer">
+                <img alt="Image Preview" id="imagePreview" style="display: none; max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <form action="#">
+            <div class="first">
+                <div class="upload">
+                    <p>Upload image</p>
+                </div>
+                <div class="info">
+                    <label> Your First and Last Name
+                        <input type="text" name="">
+                    </label>
+                    <label> Company Name
+                        <input type="text" name="">
+                    </label>
+                    <label> Category
+                        <input type="text" name="">
+                    </label>
+                </div>
+            </div>
+            <div class="second">
+                <div class="proof">
+                    <p>Proof of Business(Image, Video) max of 50mb</p>
+                    <input type="file">
+                </div>
+                <div class="document">
+                    <p>Corporate Affairs Commission (CAC) document</p>
+                    <input type="file">
+                </div>
+            </div>
+            <div class="third">
+                <div class="left">
+                    <label>Business Office Address
+                        <input type="text" name="">
+                    </label>
+                    <label> Phone Number
+                        <input type="tel" name="">
+                    </label>
+                    <label>Email Address
+                        <input type="email" name="">
+                    </label>
+                    <label>Add Pricing Packages
+                        <input type="text" name="" class="extra">
+                    </label>
+                </div>
+                <div class="right">
+                    <label>Add Company Brief
+                        <input type="text" name="" class="extra">
+                    </label>
+                </div>
+            </div>
+            <button class="main-btn" onclick="goToSection('vendor-profile')">Send Request</button>
+        </form>
     </div>
 
+    <div id="vendor-profile" class="section">
+        <div class="header-container">
+            <header class="header">
+                <div class="logo">
+                    <img src="/assets/images/Colored Logo.png" alt="">
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li class="nav-list"><a href="/src/landingpage/index.html">Home</a></li>
+                        <li class="nav-list"><a href="" >See Events</a></li>
+                        <li class="nav-list"><a href="/src/vendorspage/vendor.html" class="active">Vendors</a></li>
+                        <li class="nav-list"><a href="">Create Event</a></li> 
+                    </ul>
+                </nav>
+                
+                <span class="account"><p>J</p></span>
+            </header>
+        </div>
+        <div class="upload-image">
+           <img src="/assets/images/image 15.png" alt="">
+           <div class="background"></div>
+        </div>
+        <div class="profile-header">
+            <div class="profile-pic">
+                <img src="/assets/images/image 14.png" alt="">
+            </div>
+            <div class="profile-info">
+                <h3>Hannis Kitchen</h3>
+                <div class="description">
+                    <p>Catering Services</p>
+                    <div class="icons">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <p class="only">Hannis Kitchen is a premium catering business dedicated to delivering exceptional culinary experiences for all types of events, including weddings, corporate gatherings, private parties, and more. We specialize in creating customized menus that cater to diverse tastes and dietary preferences, ensuring every event is memorable and stress-free.</p>
+                <div class="des">
+                    <h6>Mission</h6>
+                    <p>To provide high-quality, personalized catering services that elevate events and create lasting impressions through exceptional food, presentation, and service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer></footer>
+    <script src="./vendor.js" defer></script>
 </body>
 </html>
